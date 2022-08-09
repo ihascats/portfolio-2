@@ -4,6 +4,8 @@
 
 header {
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -48,7 +50,7 @@ nav > ul > li > button:hover {
 
 .introduction > div > h1 {
   font-size: 42px;
-  color: #90ff6d;
+  color: #9bc53d;
   padding: 16px;
   background: #000000ad;
   margin-right: 64px;
@@ -56,7 +58,7 @@ nav > ul > li > button:hover {
 }
 
 .introduction > div > h2 {
-  color: #ff9369;
+  color: #fde74c;
   padding: 16px;
   background: #0000008f;
   width: fit-content;
@@ -73,7 +75,7 @@ nav > ul > li > button:hover {
   justify-content: center;
   margin: 0 20%;
   border-radius: 12px 0 12px 12px;
-  fill: #8dd8ff;
+  fill: #5bc0eb;
 }
 
 @media (max-width: 474px) {
@@ -91,5 +93,37 @@ nav > ul > li > button:hover {
   .introduction > div > h3 {
     margin: 0;
     border-radius: 0;
+  }
+}
+
+.about {
+  height: fit-content;
+  background: #fdfeff;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  display: grid;
+  justify-content: center;
+}
+
+.about > div {
+  display: grid;
+  text-align: center;
+  padding: 48px;
+  row-gap: 24px;
+  justify-content: center;
+  width: fit-content;
+}
+
+.about > div > p {
+  width: 558px;
+  background: #0000001a;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .about > div > p {
+    width: fit-content;
   }
 }
