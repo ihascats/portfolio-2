@@ -18,13 +18,61 @@ nav > ul {
   display: grid;
   grid-template-columns: max-content max-content max-content;
 }
+
 nav > ul > li > button {
   border: none;
   background-color: transparent;
-  padding: 16px 32px;
+  padding: 16px 17.5px;
   font-size: large;
   color: rgb(226, 226, 226);
 }
+
 nav > ul > li > button:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.introduction {
+  background-image: url('./images/pexels-roberto-nickson-2559941.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  height: calc(100vh - 55px);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.introduction > div {
+  display: grid;
+  justify-items: end;
+}
+
+.introduction > div > h1 {
+  font-size: 42px;
+  color: #90ff6d;
+  padding: 16px;
+  background: #000000ad;
+  margin-right: 64px;
+  border-radius: 12px 12px 0;
+}
+
+.introduction > div > h2 {
+  color: #ff9369;
+  padding: 16px;
+  background: #0000008f;
+  width: fit-content;
+  border-radius: 0 12px 12px 0;
+}
+
+.introduction > div > h3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 36px));
+  width: -webkit-fill-available;
+  gap: 9px;
+  padding: 16px;
+  background: #00000061;
+  justify-content: center;
+  margin: 0 20%;
+  border-radius: 12px 0 12px 12px;
+  fill: #8dd8ff;
 }
