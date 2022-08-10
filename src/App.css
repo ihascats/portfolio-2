@@ -6,6 +6,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 nav {
@@ -43,6 +44,15 @@ nav > ul > li > button:hover {
   justify-content: center;
 }
 
+@media (min-width: 1920px) {
+  .introduction {
+    height: calc(1080px - 55px);
+  }
+  .wrapper {
+    width: 1920px;
+  }
+}
+
 .introduction > div {
   display: grid;
   justify-items: end;
@@ -65,17 +75,13 @@ nav > ul > li > button:hover {
   border-radius: 0 12px 12px 0;
 }
 
-.introduction > div > h3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0px, 36px));
-  width: -webkit-fill-available;
-  gap: 9px;
+.introduction > div > div {
   padding: 16px;
   background: #00000061;
-  justify-content: center;
   margin: 0 20%;
   border-radius: 12px 0 12px 12px;
   fill: #5bc0eb;
+  text-align: center;
 }
 
 @media (max-width: 474px) {
@@ -90,7 +96,8 @@ nav > ul > li > button:hover {
     border-radius: 0;
   }
 
-  .introduction > div > h3 {
+  .introduction > div > div {
+    width: 100%;
     margin: 0;
     border-radius: 0;
   }
@@ -126,4 +133,13 @@ nav > ul > li > button:hover {
   .about > div > p {
     width: fit-content;
   }
+}
+
+.projects {
+  background: #32936f;
+  color: white;
+  display: grid;
+  justify-content: center;
+  row-gap: 48px;
+  padding: 48px 0;
 }

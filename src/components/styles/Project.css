@@ -1,0 +1,44 @@
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, max-content));
+  align-items: center;
+  justify-content: center;
+  width: 1080px;
+}
+
+@media (max-width: 1080px) {
+  .project {
+    justify-items: center;
+    grid-template-columns: none;
+    width: fit-content;
+  }
+}
+
+.projectText {
+  padding: 48px;
+}
+
+.projectImage {
+  width: 300px;
+  height: calc(300px * 0.5625);
+  overflow: hidden;
+}
+.projectImage > img {
+  width: inherit;
+}
+
+.projectContainer {
+  width: fit-content;
+}
+
+.projectName {
+  font-size: 32px;
+}
+
+.stack {
+  display: flex;
+}
+
+.projects > h1 {
+  text-align: center;
+}

@@ -5,6 +5,7 @@ import {
   mdiLanguageHtml5,
   mdiLanguageJavascript,
   mdiReact,
+  mdiWebpack,
 } from '@mdi/js';
 
 export default function Icons() {
@@ -63,6 +64,17 @@ export default function Icons() {
       color="inherit"
     />
   );
+  const webpack = (
+    <Icon
+      path={mdiWebpack}
+      title="Webpack"
+      size={1.5}
+      horizontal
+      vertical
+      rotate={180}
+      color="inherit"
+    />
+  );
 
   const icons = {
     html,
@@ -70,6 +82,7 @@ export default function Icons() {
     javascript,
     react,
     firebase,
+    webpack,
   };
 
   return icons;
