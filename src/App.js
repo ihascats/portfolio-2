@@ -112,7 +112,7 @@ function App() {
       </section>
       <footer>
         Made by{' '}
-        <a href="https://github.com/ihascats" target="_blank">
+        <a href="https://github.com/ihascats" target="_blank" rel="noreferrer">
           ihascats
         </a>
       </footer>

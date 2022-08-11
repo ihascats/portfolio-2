@@ -26,10 +26,10 @@ export default function Project({
             })}
           </div>
           <div>
-            <a href={live} target="_blank">
+            <a href={live} target="_blank" rel="noreferrer">
               <button tabIndex="-1">Live</button>
             </a>
-            <a href={repo} target="_blank">
+            <a href={repo} target="_blank" rel="noreferrer">
               <button tabIndex="-1">Repo</button>
             </a>
           </div>
@@ -50,10 +50,10 @@ export default function Project({
             })}
           </div>
           <div>
-            <a href={live} target="_blank">
+            <a href={live} target="_blank" rel="noreferrer">
               <button tabIndex="-1">Live</button>
             </a>
-            <a href={repo} target="_blank">
+            <a href={repo} target="_blank" rel="noreferrer">
               <button tabIndex="-1">Repo</button>
             </a>
           </div>
