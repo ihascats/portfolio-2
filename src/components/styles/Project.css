@@ -35,10 +35,22 @@
   font-size: 32px;
 }
 
-.stack {
+.stack > div {
   display: flex;
+  width: fit-content;
 }
 
 .projects > h1 {
   text-align: center;
+}
+
+.stack > div > a > button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  color: white;
+}
+
+.stack > div > a > button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }

@@ -65,10 +65,7 @@ function App() {
             return (
               <Project
                 key={project.name}
-                name={project.name}
-                description={project.description}
-                image={project.image}
-                stack={project.stack}
+                projectInfo={project}
                 windowWidth={windowWidth}
               />
             );
@@ -76,12 +73,9 @@ function App() {
           return (
             <Project
               key={project.name}
-              name={project.name}
-              description={project.description}
-              image={project.image}
-              stack={project.stack}
-              direction={false}
+              projectInfo={project}
               windowWidth={windowWidth}
+              direction={false}
             />
           );
         })}
@@ -90,7 +84,12 @@ function App() {
         <h1>Contact</h1>
         <ContactForm />
       </section>
-      <footer></footer>
+      <footer>
+        Made by{' '}
+        <a href="https://github.com/ihascats" target="_blank">
+          ihascats
+        </a>
+      </footer>
     </div>
   );
 }

@@ -158,3 +158,14 @@ nav > ul > li > button:hover {
     display: block;
   }
 }
+
+footer {
+  background: #e83f6f;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+footer > a {
+  color: white;
+}
