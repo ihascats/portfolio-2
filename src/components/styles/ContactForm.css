@@ -1,0 +1,54 @@
+form {
+  display: grid;
+  width: 600px;
+  padding: 48px;
+  gap: 16px;
+  text-align: start;
+}
+
+form > label {
+  display: grid;
+}
+
+form > label > :last-child {
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  border-bottom: 4px solid white;
+}
+
+form > label > :last-child:focus {
+  outline: none;
+  border-bottom: 4px solid #00ff37;
+}
+
+form > label > textarea {
+  resize: none;
+  height: 128px;
+}
+
+input[type='submit'] {
+  width: 98px;
+  border: none;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-left: calc(100% - 98px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+input[type='submit']:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 616px) {
+  form {
+    display: grid;
+    width: 100%;
+    padding: 48px 8px;
+    gap: 16px;
+  }
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import { ContactForm } from './components/ContactForm';
 import Project from './components/Project';
 import Icons from './js/Icons';
 import ProjectList from './js/ProjectList';
@@ -85,7 +86,10 @@ function App() {
           );
         })}
       </section>
-      <section className="contact"></section>
+      <section className="contact">
+        <h1>Contact</h1>
+        <ContactForm />
+      </section>
       <footer></footer>
     </div>
   );

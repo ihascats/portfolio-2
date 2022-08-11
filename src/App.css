@@ -44,12 +44,12 @@ nav > ul > li > button:hover {
   justify-content: center;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
   .introduction {
     height: calc(1080px - 55px);
   }
   .wrapper {
-    width: 1920px;
+    width: 1900px;
   }
 }
 
@@ -105,7 +105,7 @@ nav > ul > li > button:hover {
 
 .about {
   height: fit-content;
-  background: #fdfeff;
+  background: #ffbf00;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -142,4 +142,19 @@ nav > ul > li > button:hover {
   justify-content: center;
   row-gap: 48px;
   padding: 48px 0;
+}
+
+.contact {
+  background-color: #2274a5;
+  color: white;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 0 0 0;
+}
+
+@media (max-width: 616px) {
+  .contact {
+    display: block;
+  }
 }
