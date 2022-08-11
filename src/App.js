@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { ContactForm } from './components/ContactForm';
 import Project from './components/Project';
@@ -9,6 +9,26 @@ function App() {
   const iconPack = Icons();
   const projectList = ProjectList();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // code from https://www.youtube.com/watch?v=oszUqCqTGHo&ab_channel=ProgramWithAbu
+  const aboutSection = useRef(null);
+  const projectsSection = useRef(null);
+  const contactSection = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    if (elementRef.current.className === 'contact') {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: 'smooth',
+      });
+    } else {
+      window.scrollTo({
+        top: elementRef.current.offsetTop - 55,
+        behavior: 'smooth',
+      });
+    }
+  };
+  //
 
   window.onresize = () => {
     setWindowWidth(window.innerWidth);
@@ -22,13 +42,19 @@ function App() {
         <nav>
           <ul>
             <li>
-              <button>About</button>
+              <button onClick={() => scrollToSection(aboutSection)}>
+                About
+              </button>
             </li>
             <li>
-              <button>Projects</button>
+              <button onClick={() => scrollToSection(projectsSection)}>
+                Projects
+              </button>
             </li>
             <li>
-              <button>Contact</button>
+              <button onClick={() => scrollToSection(contactSection)}>
+                Contact
+              </button>
             </li>
           </ul>
         </nav>
@@ -47,7 +73,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="about">
+      <section ref={aboutSection} className="about">
         <div>
           <h1>About Me</h1>
           <p>
@@ -58,7 +84,7 @@ function App() {
           </p>
         </div>
       </section>
-      <section className="projects">
+      <section ref={projectsSection} className="projects">
         <h1>Projects</h1>
         {projectList.map((project, index) => {
           if (index % 2 === 0) {
@@ -80,7 +106,7 @@ function App() {
           );
         })}
       </section>
-      <section className="contact">
+      <section ref={contactSection} className="contact">
         <h1>Contact</h1>
         <ContactForm />
       </section>
