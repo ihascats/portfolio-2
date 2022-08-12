@@ -16,17 +16,10 @@ function App() {
   const contactSection = useRef(null);
 
   const scrollToSection = (elementRef) => {
-    if (elementRef.current.className === 'contact') {
-      window.scrollTo({
-        top: elementRef.current.offsetTop,
-        behavior: 'smooth',
-      });
-    } else {
-      window.scrollTo({
-        top: elementRef.current.offsetTop - 55,
-        behavior: 'smooth',
-      });
-    }
+    window.scrollTo({
+      top: elementRef.current.offsetTop - 55,
+      behavior: 'smooth',
+    });
   };
   //
 

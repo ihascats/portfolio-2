@@ -9,37 +9,54 @@ export const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'portfolioMail',
-        'portfolio-mail',
-        form.current,
-        'qdIXJz00rQL7gvLCY',
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        },
-      );
+    let isEmpty = false;
+
+    [...e.target].forEach((element) => {
+      if (element.value === '') {
+        isEmpty = true;
+      }
+    });
+
+    if (isEmpty) {
+      // display error
+    }
+
+    if (!isEmpty) {
+      emailjs
+        .sendForm(
+          'portfolioMail',
+          'portfolio-mail',
+          form.current,
+          'qdIXJz00rQL7gvLCY',
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          },
+        );
+    }
   };
 
   return (
     <form ref={form} onSubmit={sendEmail}>
       <label>
-        Name
+        Name*
+        {/* Cannot be empty */}
         <input type="text" name="user_name" />
       </label>
 
       <label>
-        Email
+        Email*
+        {/* Email Validation */}
         <input type="email" name="user_email" />
       </label>
 
       <label>
-        Message
+        Message*
+        {/* Cannot be empty */}
         <textarea name="message" />
       </label>
 
