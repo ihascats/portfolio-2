@@ -14,6 +14,11 @@ export const ContactForm = () => {
     [...e.target].forEach((element) => {
       if (element.value === '') {
         isEmpty = true;
+        element.classList.add('invalid');
+        element.oninput = () => {
+          element.classList.remove('invalid');
+          element.oninput = null;
+        };
       }
     });
 

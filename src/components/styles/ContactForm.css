@@ -19,7 +19,7 @@ form > label > :last-child {
 
 form > label > :last-child:focus {
   outline: none;
-  border-bottom: 4px solid #00ff37;
+  border-bottom: 4px solid #00d7ff;
 }
 
 form > label > textarea {
@@ -51,4 +51,8 @@ input[type='submit']:hover {
     padding: 48px 8px;
     gap: 16px;
   }
+}
+
+.invalid {
+  border-bottom: 4px solid red !important;
 }
