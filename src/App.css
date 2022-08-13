@@ -150,12 +150,21 @@ nav > ul > li > button:hover {
   display: grid;
   justify-content: center;
   text-align: center;
-  padding: 48px 0 0 0;
+  padding: 48px 0;
+  row-gap: 48px;
+}
+
+.contact > div {
+  background: rgb(0 0 0 / 10%);
+  border-radius: 8px;
 }
 
 @media (max-width: 616px) {
   .contact {
     display: block;
+  }
+  .contact > div {
+    margin-top: 48px;
   }
 }
 

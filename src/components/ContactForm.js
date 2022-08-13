@@ -1,10 +1,11 @@
 import './styles/ContactForm.css';
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
   const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -45,7 +46,7 @@ export const ContactForm = () => {
     }
   };
 
-  return (
+  const formElement = (
     <form ref={form} onSubmit={sendEmail}>
       <label>
         Name*
@@ -68,4 +69,6 @@ export const ContactForm = () => {
       <input type="submit" value="Send" />
     </form>
   );
+
+  return <div>{messageSent ? null : formElement}</div>;
 };
