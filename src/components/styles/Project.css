@@ -16,6 +16,7 @@
 
 .projectText {
   padding: 48px;
+  z-index: 1;
 }
 
 .projectImage {
@@ -26,7 +27,15 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  z-index: 0;
+  transition: transform 0.25s ease;
 }
+
+.projectImage:hover {
+  -webkit-transform: scale(1.5); /* or some other value */
+  transform: scale(1.5);
+}
+
 .projectImage > img {
   width: inherit;
 }
