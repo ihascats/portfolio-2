@@ -117,7 +117,7 @@ nav > ul > li > button:hover {
   display: grid;
   text-align: center;
   padding: 48px;
-  row-gap: 24px;
+  row-gap: 48px;
   justify-content: center;
   width: fit-content;
 }
