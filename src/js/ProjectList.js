@@ -7,8 +7,7 @@ export default function ProjectList() {
     name: 'Weather App',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    image:
-      'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+    image: 'https://i.imgur.com/d4yZ0L2.png',
     stack: [iconPack.html, iconPack.css, iconPack.javascript, iconPack.webpack],
     live: 'https://ihascats.github.io/weather-app/',
     repo: 'https://github.com/ihascats/weather-app',
@@ -17,8 +16,7 @@ export default function ProjectList() {
     name: 'Battleship Game',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    image:
-      'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+    image: 'https://i.imgur.com/7GNAlut.png',
     stack: [iconPack.html, iconPack.css, iconPack.javascript, iconPack.webpack],
     live: 'https://ihascats.github.io/battleship/',
     repo: 'https://github.com/ihascats/battleship',
@@ -27,8 +25,7 @@ export default function ProjectList() {
     name: "Where's Waldo",
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    image:
-      'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+    image: 'https://i.imgur.com/NojzYYA.jpg',
     stack: [
       iconPack.html,
       iconPack.css,
@@ -43,8 +40,7 @@ export default function ProjectList() {
     name: 'Buzzer, a Twitter clone',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    image:
-      'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+    image: 'https://imgur.com/ksXpC0Y.png',
     stack: [
       iconPack.html,
       iconPack.css,
