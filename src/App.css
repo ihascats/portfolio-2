@@ -158,6 +158,10 @@ nav > ul > li > button:hover {
   background: rgb(0 0 0 / 10%);
   border-radius: 8px;
 }
+.contact > div > div {
+  padding: 48px;
+  fill: #5beb73;
+}
 
 @media (max-width: 616px) {
   .contact {

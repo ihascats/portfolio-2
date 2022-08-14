@@ -2,10 +2,13 @@ import './styles/ContactForm.css';
 
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Icons from '../js/Icons';
 
 export const ContactForm = () => {
   const form = useRef();
-  const [messageSent, setMessageSent] = useState(false);
+  const [messageSent, setMessageSent] = useState(true);
+  const [messageFailed, setMessageFailed] = useState(false);
+  const iconPack = Icons();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -37,10 +40,11 @@ export const ContactForm = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
+            setMessageSent(true);
           },
           (error) => {
-            console.log(error.text);
+            setMessageSent(true);
+            setMessageFailed(true);
           },
         );
     }
@@ -70,5 +74,7 @@ export const ContactForm = () => {
     </form>
   );
 
-  return <div>{messageSent ? null : formElement}</div>;
+  const formSent = <div>{messageFailed ? iconPack.fail : iconPack.check}</div>;
+
+  return <div>{messageSent ? formSent : formElement}</div>;
 };

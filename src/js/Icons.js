@@ -1,5 +1,7 @@
 import Icon from '@mdi/react';
 import {
+  mdiCheckCircleOutline,
+  mdiCloseCircleOutline,
   mdiFirebase,
   mdiLanguageCss3,
   mdiLanguageHtml5,
@@ -75,6 +77,26 @@ export default function Icons() {
       color="inherit"
     />
   );
+  const check = (
+    <Icon
+      path={mdiCheckCircleOutline}
+      size={2}
+      horizontal
+      vertical
+      rotate={180}
+      color="inherit"
+    />
+  );
+  const fail = (
+    <Icon
+      path={mdiCloseCircleOutline}
+      size={2}
+      horizontal
+      vertical
+      rotate={180}
+      color="inherit"
+    />
+  );
 
   const icons = {
     html,
@@ -83,6 +105,8 @@ export default function Icons() {
     react,
     firebase,
     webpack,
+    check,
+    fail,
   };
 
   return icons;

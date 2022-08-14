@@ -1,8 +1,8 @@
 .project {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0px, max-content));
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
   width: 1080px;
   padding: 48px;
   column-gap: 48px;
@@ -26,6 +26,9 @@
 
 .projectText {
   z-index: 1;
+  height: 100%;
+  width: inherit;
+  max-width: 100%;
 }
 
 .projectImage {
