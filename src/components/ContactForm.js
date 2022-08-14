@@ -6,7 +6,7 @@ import Icons from '../js/Icons';
 
 export const ContactForm = () => {
   const form = useRef();
-  const [messageSent, setMessageSent] = useState(true);
+  const [messageSent, setMessageSent] = useState(false);
   const [messageFailed, setMessageFailed] = useState(false);
   const iconPack = Icons();
 
